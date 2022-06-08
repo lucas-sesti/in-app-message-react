@@ -1,0 +1,45 @@
+@import "styles/style.scss";
+
+.c-message {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: $global-spacing-unit-medium;
+
+  &__image {
+    width: 40px;
+    height: 40px;
+  }
+
+  &__text {
+    padding: $global-spacing-unit-medium $global-spacing-unit-small;
+    border-radius: $border-radius-sm;
+
+    &--margin {
+      margin-left: 54px !important;
+    }
+
+    &-content {
+      margin-bottom: 0;
+      font-size: $font-size-xxs;
+      color: $color-neutral-darkest;
+    }
+  }
+
+  &--incoming {
+    .c-message__text {
+      margin-left: $global-spacing-unit-small;
+      border-bottom-left-radius: 0;
+      background-color: #f7f7f7;
+    }
+  }
+
+  &--outgoing {
+    flex-direction: row-reverse;
+
+    .c-message__text {
+      border-bottom-right-radius: 0;
+      margin-right: $global-spacing-unit-small;
+      background-color: #eeecf6;
+    }
+  }
+}

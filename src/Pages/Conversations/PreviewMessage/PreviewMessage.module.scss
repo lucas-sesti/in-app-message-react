@@ -1,0 +1,45 @@
+@import "styles/style.scss";
+
+.c-preview-message {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  margin-bottom: $global-spacing-unit-large;
+
+  &__avatar {
+    width: 80px;
+    height: 80px;
+    margin-right: $global-spacing-unit-medium;
+  }
+
+  &__container {
+    width: calc(100% - 80px);
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: $global-spacing-unit-small;
+
+      &-name,
+      &-hour {
+        margin: 0;
+        color: $color-neutral-darkest;
+      }
+    }
+
+    &-message {
+      font-size: $font-size-xxs;
+      white-space: nowrap;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: $color-neutral-darkest;
+      font-weight: normal;
+
+      @include mq($until: phone) {
+        width: 230px;
+      }
+    }
+  }
+}

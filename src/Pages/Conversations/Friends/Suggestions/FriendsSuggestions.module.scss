@@ -1,0 +1,21 @@
+@import "styles/style.scss";
+
+.c-friends-suggestions {
+  display: flex;
+  height: 70px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-right: $global-spacing-unit-small;
+    cursor: pointer;
+
+    &--search {
+      background: $color-brand-primary-light;
+      border-radius: 100%;
+    }
+  }
+}

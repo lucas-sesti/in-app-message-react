@@ -1,0 +1,52 @@
+@import "styles/style.scss";
+
+.c-conversations {
+  &__header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: $global-spacing-unit-medium;
+    width: 100%;
+    height: 200px;
+    background-color: $color-brand-primary-medium;
+    margin: 0;
+    color: $color-neutral-lightest;
+
+    @include mq($until: phone) {
+      height: 33vh;
+    }
+
+    &-title {
+      max-width: 50%;
+      width: 100%;
+    }
+
+    &-friends {
+      display: flex;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      margin-top: $global-spacing-unit-small;
+    }
+
+    &--divider {
+      position: absolute;
+      top: 180px;
+      height: 20px;
+      left: 0;
+      right: 0;
+      background: white;
+      border-top-left-radius: $border-radius-md;
+      border-top-right-radius: $border-radius-md;
+
+      @include mq($until: phone) {
+        top: calc(33vh - 20px);
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: $global-spacing-unit-medium;
+  }
+}

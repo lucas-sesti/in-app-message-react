@@ -1,0 +1,28 @@
+@import "styles/style.scss";
+
+.c-login {
+  padding: $global-spacing-unit-medium;
+
+  &__title {
+    margin-bottom: $global-spacing-unit-medium;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+
+    &-select {
+      flex: 2;
+      margin-right: $global-spacing-unit-large;
+    }
+
+    &-action {
+      background-color: $color-brand-primary-medium;
+      border: none;
+      padding: $global-spacing-unit-small;
+      border-radius: $border-radius-sm;
+      color: $color-neutral-lightest;
+      font-weight: bold;
+    }
+  }
+}
