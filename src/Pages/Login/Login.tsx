@@ -31,7 +31,7 @@ export default function Login() {
 
   return (
     <form className={styles["c-login"]} onSubmit={handleSubmit}>
-      <h1 className={styles["c-login__title"]}>Escolha um usuário</h1>
+      <h1 className={styles["c-login__title"]}>Choose one user to login</h1>
 
       <div className={styles["c-login__content"]}>
         <select
@@ -43,7 +43,7 @@ export default function Login() {
           <option value="2">John Doe</option>
         </select>
 
-        <button className={styles["c-login__content-action"]}>Logar</button>
+        <button className={styles["c-login__content-action"]}>Login</button>
       </div>
     </form>
   );

@@ -19,7 +19,7 @@ export default function Conversations() {
     <div className={styles["c-conversations"]}>
       <div className={styles["c-conversations__header"]}>
         <h1 className={styles["c-conversations__header-title"]}>
-          Converse com seus amigos
+          Chat with your friends
         </h1>
         <div className={styles["c-conversations__header-friends"]}>
           <FriendsSuggestions />
